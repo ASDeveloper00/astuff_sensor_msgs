@@ -2,12 +2,9 @@ Header header
 
 bool enabled
 bool override_active
-bool command_output_fault
-bool input_output_fault
-bool output_reported_fault
-bool pacmod_fault
-bool vehicle_fault
+bool fault_active
 uint8 disable_source
+uint8 dtc
 
 uint16 manual_input
 uint16 command
@@ -21,10 +18,19 @@ uint8 DISABLE_VEHICLE_CAN_TIMEOUT = 4
 uint8 DISABLE_GLOBAL_REPORT_TIMEOUT = 5
 uint8 DISABLE_SUBSYSTEM_REPORT_TIMEOUT = 6
 uint8 DISABLE_SYSTEM_FAULT = 7
-uint8 DISABLE_VEHICLE_FAULT = 8
-uint8 DISABLE_OTHER_SYSTEM_OVERRIDDEN = 9
-uint8 DISABLE_OTHER_SYSTEM_TIMEOUT = 10
-uint8 DISABLE_OTHER_SYSTEM_FAULT = 11
+uint8 DISABLE_OTHER_SYSTEM_OVERRIDDEN = 8
+uint8 DISABLE_OTHER_SYSTEM_TIMEOUT = 9
+uint8 DISABLE_OTHER_SYSTEM_FAULT = 10
+
+uint8 DTC_NONE = 0
+uint8 DTC_SENSOR_FAULT = 1
+uint8 DTC_CAN_READ_ERR = 2
+uint8 DTC_CAN_WRITE_ERR = 3
+uint8 DTC_INPUT_OUTPUT_MISMATCH = 4
+uint8 DTC_COMMAND_OUTPUT_MISMATCH = 5
+uint8 DTC_OUTPUT_REPORTED_MISMATCH = 6
+uint8 DTC_VEHICLE_CALIBRATION_FAULT = 7
+uint8 DTC_INVALID_CAN_DATA_FAULT = 8
 
 uint16 CRUISE_CONTROL_NONE = 0
 uint16 CRUISE_CONTROL_CNCL = 1
