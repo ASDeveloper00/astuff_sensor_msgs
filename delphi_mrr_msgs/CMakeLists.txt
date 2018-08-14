@@ -59,6 +59,8 @@ add_message_files(
   MrrHeaderAlignmentState.msg
   MrrControlMsgFR.msg
   SystemControl.msg
+  MrrStatusRadar.msg
+  MrrStatusCANVersion.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)
