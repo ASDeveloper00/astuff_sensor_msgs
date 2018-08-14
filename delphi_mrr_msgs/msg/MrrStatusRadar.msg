@@ -1,6 +1,6 @@
 Header header
 
-#MRR RadarStatus
+#MRR StatusRadar
 
 bool radarAlignNotStart
 bool radarExtCondNotOk
